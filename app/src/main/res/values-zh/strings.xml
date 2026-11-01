@@ -1,0 +1,1120 @@
+<resources>
+    <!-- 命名规则：`_` 分隔作用域，作用域内用驼峰。
+         例：feature_doomScrolling_timeUntilWarning_description
+         大小写：全篇句首大写。功能名（紧急刹车、禁用应用……）与
+         Android 术语（快捷设置、设备管理员）保留其大写。 -->
+
+    <!-- region 应用与服务 -->
+    <!-- 不叫 "app_name"：那个资源名已被一个库占用 -->
+    <string name="app_quickSettingsTile">暂停 getabreak</string>
+    <string name="app_quickSettingsTile_paused">getabreak 已暂停 %d 分钟。</string>
+    <string name="app_quickSettingsTile_noPause">%d 分钟后可再次暂停。</string>
+    <string name="app_brakeTile_until">直到 %s</string>
+    <string name="app_accessibilityService_name">getabreak 无障碍服务</string>
+    <string name="app_accessibilityService_description">根据你正在使用的应用，实时执行 getabreak 的规则。</string>
+    <string name="app_notification_action_pause">暂停</string>
+    <string name="app_notification_action_resume">继续</string>
+    <string name="app_notification_channelName">getabreak 服务</string>
+    <string name="app_notification_channelDescription">让 getabreak 在后台保持运行</string>
+    <string name="app_notification_alertChannelName">getabreak 提醒</string>
+    <string name="app_notification_alertChannelDescription">当手机停掉 getabreak 时通知你</string>
+    <string name="app_notification_screenTime">今天已用 %s</string>
+    <string name="app_notification_budget">%1$s：%2$s</string>
+    <string name="reliability_serviceDown_title">getabreak 已停止</string>
+    <string name="reliability_serviceDown_message">手机在后台停掉了 getabreak。点按可重新启动。</string>
+    <string name="reliability_keepAlive_title">让 getabreak 保持运行</string>
+    <string name="reliability_keepAlive_subtitle">显示一条常驻通知，带上今天的屏幕使用时间，这样系统更不容易在后台停掉 getabreak。</string>
+    <string name="reliability_keepAlive_locked_subtitle">承诺密码生效期间无法更改。没有这条通知，getabreak 可能被直接划掉。</string>
+    <string name="reliability_battery_title">允许不受电量限制</string>
+    <string name="reliability_battery_subtitle">阻止系统让 getabreak 休眠。如果你的手机经常强行关闭后台应用，建议开启。</string>
+    <string name="reliability_onboarding_title">保持稳定运行</string>
+    <string name="reliability_onboarding_message">有些手机会为了省电停掉后台应用，这可能悄悄把 getabreak 关掉。下面这些可选设置能帮它持续运行。</string>
+    <string name="reliability_forceStopped_title">手机把 getabreak 关掉了</string>
+    <string name="reliability_forceStopped_message">应用被强行停止时，Android 会同时关掉它的无障碍服务，而清理最近任务或手机的电池管理都可能触发这一点。请在最近任务里锁定 getabreak，允许它在后台运行，然后重新启动。</string>
+    <string name="reliability_forceStopped_howTo">看看怎么设置</string>
+    <string name="reliability_forceStopped_dismiss">就让它关着</string>
+    <!-- endregion -->
+
+    <!-- region 通用操作与状态 -->
+    <string name="action_go">前往</string>
+    <string name="action_save">保存</string>
+    <string name="action_delete">删除</string>
+    <string name="action_back">返回</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_ok">确定</string>
+    <string name="action_close">关闭</string>
+    <string name="action_done">完成</string>
+    <string name="action_grantPermission">授予权限</string>
+    <string name="action_openAppInfo">打开应用信息</string>
+    <string name="action_requestPermissions">此功能需要额外权限。</string>
+    <string name="action_requestOverlayPermission">这需要「显示在其他应用上层」权限。</string>
+    <string name="action_search">搜索</string>
+    <string name="action_search_close">关闭搜索</string>
+    <string name="action_filter">筛选</string>
+    <string name="state_on">开</string>
+    <string name="state_off">关</string>
+    <!-- endregion -->
+
+    <!-- region 通用格式 -->
+    <string name="duration_minutes">%d 分钟</string>
+    <string name="duration_hoursMinutes">%1$d 小时 %2$d 分钟</string>
+    <string name="duration_hours">%d 小时</string>
+    <string name="duration_hours_short">%dh</string>
+    <string name="duration_minutes_short">%dm</string>
+    <string name="duration_hoursCompact">%1$dh%2$dm</string>
+    <string name="duration_hoursMinutes_short">%1$dh %2$dm</string>
+    <string name="duration_minutesSeconds_short">%1$dm %2$ds</string>
+    <string name="duration_seconds_short">%ds</string>
+    <string name="distance_meters">%d 米</string>
+    <string name="distance_kilometers">%.1f 公里</string>
+    <!-- endregion -->
+
+    <!-- region 导航 -->
+    <string name="navigation_reportIssue">反馈问题</string>
+    <string name="navigation_about">关于与设置</string>
+    <string name="navigation_premium">getabreak 高级版</string>
+    <!-- endregion -->
+
+    <!-- region 首页 -->
+    <string name="home_start">启动 getabreak</string>
+    <string name="home_stop">停止 getabreak</string>
+    <string name="home_state_active">运行中</string>
+    <string name="home_state_paused">已暂停，%s 恢复</string>
+    <string name="home_state_braking">刹车生效中，直到 %s</string>
+    <string name="home_state_inactive">已停止</string>
+    <string name="home_screenTime_today">今日屏幕使用时间</string>
+    <string name="home_screenTime_unavailable">无法获取屏幕使用时间</string>
+    <string name="home_screenTime_allLeftOut">你今天用过的应用都不计入统计。</string>
+    <string name="home_screenTime_allLeftOut_action">更改统计范围</string>
+    <string name="home_uninstall">卸载 getabreak</string>
+    <string name="home_uninstall_hint">getabreak 持有高权限，直接卸载可能失败。先点这里撤销权限。</string>
+    <string name="home_uninstall_blocked_hint">承诺密码生效期间已禁用。</string>
+    <string name="home_uninstall_dialog_title">确定吗？</string>
+    <string name="home_uninstall_dialog_message">这会撤销 getabreak 的权限，好让你正常卸载。\n\n如果再次安装 getabreak，你需要重新授予这些权限。</string>
+    <string name="home_finishSetup_title">完成你的设置</string>
+    <string name="home_finishSetup_message">有一个分组要给应用变灰，还差一项权限。</string>
+    <string name="home_finishSetup_message_overlay">等待、锁定和刷屏休息都在等「显示在其他应用上层」权限。</string>
+    <string name="home_finishSetup_action">完成</string>
+    <string name="home_batteryOptimization_title">让 getabreak 保持运行</string>
+    <string name="home_batteryOptimization_message">手机可能会在后台停掉 getabreak。允许它不受电量限制运行，你的规则才能一直生效。</string>
+    <string name="home_batteryOptimization_action">允许</string>
+    <string name="home_batteryOptimization_why">为什么？</string>
+    <string name="home_batteryOptimization_dismiss">以后再说</string>
+
+    <!-- 首页底部的小机器人：晚上会打呼噜，也会抓住手快的人 -->
+    <string name="home_droid_asleep">我睡了。你也该睡了。</string>
+    <string name="home_droid_caught_message">看起来你陷入了点图标的循环。</string>
+    <plurals name="home_droid_caught_context">
+        <item quantity="one">你在 %2$d 秒内点了图标 %1$d 次。</item>
+        <item quantity="other">你在 %2$d 秒内点了图标 %1$d 次。</item>
+    </plurals>
+    <!-- endregion -->
+
+    <!-- region 应用列表与分类 -->
+    <!-- 控件配置器与应用例外清单共用 -->
+    <string name="appList_section_selected">已选应用</string>
+    <string name="appList_section_available">可选应用</string>
+    <string name="appList_selected_empty">还没有选择应用。</string>
+    <string name="appList_badge_system">系统</string>
+    <string name="appList_filter_launchable">可打开的应用</string>
+    <string name="appList_filter_background">没有图标的应用</string>
+    <string name="appList_tab_apps">应用</string>
+    <string name="appList_tab_websites">网站</string>
+    <string name="appList_browser_websites_all">对其中的所有网站生效</string>
+    <string name="appList_browser_websites_only">仅对其中的所选网站生效</string>
+    <string name="appList_browser_websites_allExcept">对其中的所有网站生效，所选网站除外</string>
+    <string name="appList_browser_websites_unreadable">getabreak 读不到其中的网站</string>
+    <plurals name="websites_coveredBrowsers">
+        <item quantity="one">因为该浏览器本身已在「应用」一侧被纳入，%s 中的所有网站本来就会生效。</item>
+        <item quantity="other">因为这些浏览器本身已在「应用」一侧被纳入，%s 中的所有网站本来就会生效。</item>
+    </plurals>
+    <string name="websites_showApps">显示应用</string>
+    <string name="appCategories_video">视频</string>
+    <string name="appCategories_music">音乐</string>
+    <string name="appCategories_audio">音频</string>
+    <string name="appCategories_shopping">购物</string>
+    <string name="appCategories_travel">出行</string>
+    <string name="appCategories_workout">健身</string>
+    <string name="appCategories_dating">交友</string>
+    <string name="appCategories_news">新闻</string>
+    <string name="appCategories_maps">地图</string>
+    <string name="appCategories_social">社交</string>
+    <string name="appCategories_productivity">效率</string>
+    <string name="appCategories_games">游戏</string>
+    <string name="appCategories_image">图片</string>
+    <string name="appCategories_other">其他</string>
+    <!-- endregion -->
+
+    <!-- region 应用列表中的网站 -->
+    <string name="websites_add_label">添加网站</string>
+    <string name="websites_add_placeholder">youtube.com 或 youtube.com/shorts</string>
+    <string name="websites_add_action">添加</string>
+    <string name="websites_add_invalid">这看起来不像网址。</string>
+    <string name="websites_section_yours">你的网站</string>
+    <string name="websites_section_yours_empty">还没有。添加一个域名会对它下面的全部内容生效，包含子域名。加上路径，例如 youtube.com/shorts，就只对那部分生效。</string>
+    <string name="websites_section_collections">现成清单</string>
+    <string name="websites_collection_social">社交媒体</string>
+    <string name="websites_collection_video">视频与流媒体</string>
+    <string name="websites_collection_shopping">购物</string>
+    <string name="websites_collection_dating">交友</string>
+    <string name="websites_collection_adult">色情网站</string>
+    <string name="websites_collection_gambling">赌博</string>
+    <!-- 一个清单的头几个站点，然后是它总共有多少 -->
+    <string name="websites_collection_sample">%1$s 等 %2$d 个</string>
+    <string name="websites_collection_size">%1$s 个网站，%2$s</string>
+    <string name="websites_source_stevenBlack">来自 StevenBlack hosts 清单</string>
+    <string name="websites_source_ut1">来自图卢兹第一大学（UT1）黑名单</string>
+    <string name="websites_source_stevenBlackAndUt1">来自 StevenBlack hosts 清单与 UT1 黑名单</string>
+    <!-- %s 是一个或几个浏览器，例如「Chrome 和 Firefox」 -->
+    <string name="websites_browsers_readable">在 %s 中有效。</string>
+    <string name="websites_browsers_unreadable">getabreak 读不到 %s，其中的网站不会被察觉。请改为把浏览器本身添加为应用。</string>
+    <string name="websites_browsers_none">getabreak 读不到你的任何浏览器。Chrome、Firefox、三星浏览器、Brave、Edge 及其大多数同类都可以。</string>
+    <string name="websites_inAppBrowsers">在别的应用内部打开的链接不受覆盖，例如 Instagram 自带的浏览器。</string>
+    <!-- endregion -->
+
+    <!-- region 共享的功能设置 -->
+    <string name="feature_settings_exceptions">应用与网站</string>
+    <plurals name="feature_settings_exceptions_notListed">
+        <item quantity="one">除所选的 %d 个外，在所有应用中生效。</item>
+        <item quantity="other">除所选的 %d 个外，在所有应用中生效。</item>
+    </plurals>
+    <plurals name="feature_settings_exceptions_onlyListed">
+        <item quantity="one">仅在所选的 %d 个应用中生效。</item>
+        <item quantity="other">仅在所选的 %d 个应用中生效。</item>
+    </plurals>
+    <string name="feature_settings_exceptions_allApps">在所有应用中生效。</string>
+    <string name="feature_settings_exceptions_empty">没有找到应用。</string>
+    <string name="feature_settings_exceptions_filterByAppType">按应用类型筛选</string>
+    <string name="feature_settings_exceptions_filterByCategory">按应用分类筛选</string>
+    <string name="feature_settings_exceptions_listType">生效范围</string>
+    <string name="feature_settings_exceptions_listType_notList">除所选外的所有应用</string>
+    <string name="feature_settings_exceptions_listType_onlyList">仅所选应用</string>
+    <string name="feature_settings_exceptions_copyFrom">从…复制</string>
+    <string name="feature_settings_exceptions_copyFrom_dialogTitle">复制选择范围自</string>
+    <string name="feature_settings_exceptions_copyFrom_dialogHint">会用另一个分组的应用和网站覆盖当前列表。当前选择将丢失。</string>
+    <string name="feature_settings_exceptions_copyFrom_appCount">%d 个应用</string>
+    <string name="feature_settings_exceptions_switchListType_title">保留所选应用？</string>
+    <string name="feature_settings_exceptions_switchListType_toNotList">目前它只对你所选的 %d 个应用生效。切换后，这些应用会变成唯一被跳过的。</string>
+    <string name="feature_settings_exceptions_switchListType_toOnlyList">目前你所选的 %d 个应用是被跳过的。切换后，它们会变成唯一生效的。</string>
+    <string name="feature_settings_exceptions_switchListType_keep">保留选择</string>
+    <string name="feature_settings_exceptions_switchListType_clear">先清空列表</string>
+    <string name="feature_settings_exceptions_notListed_websites">除所选网站（%s）外的所有网站都生效。</string>
+    <string name="feature_settings_exceptions_onlyListed_websites">仅在所选网站（%s）生效。</string>
+    <string name="feature_settings_exceptions_noWebsites">未选择网站。</string>
+    <plurals name="websites_count_sites">
+        <item quantity="one">%d 个网站</item>
+        <item quantity="other">%d 个网站</item>
+    </plurals>
+    <plurals name="websites_count_collections">
+        <item quantity="one">%d 个清单</item>
+        <item quantity="other">%d 个清单</item>
+    </plurals>
+    <string name="feature_settings_exceptions_allWebsites">在所有网站生效。</string>
+    <string name="feature_settings_exceptions_listType_notList_websites">除所选外的所有网站</string>
+    <string name="feature_settings_exceptions_listType_onlyList_websites">仅所选网站</string>
+    <string name="feature_settings_exceptions_copyFrom_appAndWebsiteCount">%1$d 个应用，%2$d 个网站</string>
+    <string name="feature_settings_exceptions_switchListType_title_websites">保留所选网站？</string>
+    <string name="feature_settings_exceptions_switchListType_toNotList_websites">目前它只对你所选的网站（%s）生效。切换后，这些会变成唯一被跳过的网站。</string>
+    <string name="feature_settings_exceptions_switchListType_toOnlyList_websites">目前你所选的网站（%s）是被跳过的。切换后，它们会变成唯一生效的。</string>
+    <string name="feature_settings_advanced">高级</string>
+
+    <string name="feature_settings_schedule">时间表</string>
+    <string name="feature_settings_schedule_hint">%d 个时间段</string>
+    <string name="feature_settings_schedule_hint_activeAllTheTime">始终生效</string>
+    <string name="feature_settings_schedule_description">添加时间段，把此功能限制在特定日期和时刻。</string>
+    <string name="feature_settings_schedule_everyDay">每天</string>
+    <string name="feature_settings_schedule_allDay">全天</string>
+    <string name="feature_settings_schedule_nextDay">次日</string>
+    <string name="feature_settings_schedule_weekdays">星期</string>
+    <string name="feature_settings_schedule_add">添加时间段</string>
+    <string name="feature_settings_schedule_newRule">新建时间段</string>
+    <string name="feature_settings_schedule_editRule">编辑时间段</string>
+    <string name="feature_settings_schedule_start">开始</string>
+    <string name="feature_settings_schedule_end">结束</string>
+    <string name="feature_settings_schedule_status_activeUntil">正在生效，直到 %s</string>
+    <string name="feature_settings_schedule_status_inactiveUntil">现在关闭，%s 起生效</string>
+    <!-- endregion -->
+    <!-- region 分组 -->
+    <string name="ruleGroups_title">你的分组</string>
+    <string name="ruleGroups_new">新建分组</string>
+    <string name="ruleGroups_unnamed">分组</string>
+    <string name="ruleGroups_quotedName">「%s」</string>
+    <string name="ruleGroups_name">名称</string>
+    <string name="ruleGroups_menu">更多</string>
+    <string name="ruleGroups_rename">重命名</string>
+    <string name="ruleGroups_delete">删除分组</string>
+    <string name="ruleGroups_delete_title">删除「%s」？</string>
+    <string name="ruleGroups_delete_message">它的应用、网站、时间表和额度都会一起删掉。应用本身保持原样。</string>
+    <string name="ruleGroups_empty_title">还没有分组</string>
+    <string name="ruleGroups_empty_message">一个分组就是一批应用和网站，加上它们何时生效、一共能用多久，以及用完之后会发生什么：等待、变灰、刷屏休息、锁定。</string>
+    <!-- 从旧版本规则迁移过来的分组名 -->
+    <string name="ruleGroups_migrated_gray">变灰</string>
+    <string name="ruleGroups_migrated_locked">已屏蔽的应用</string>
+    <string name="ruleGroups_migrated_scrollBreaks">刷屏休息</string>
+    <string name="ruleGroups_onboarding_name">让人分心的应用</string>
+    <string name="ruleGroups_feature_unused">没有任何分组使用</string>
+    <plurals name="ruleGroups_feature_usedBy">
+        <item quantity="one">被 %d 个分组使用</item>
+        <item quantity="other">被 %d 个分组使用</item>
+    </plurals>
+    <string name="home_section_more">更多</string>
+    <string name="home_finishSetup_message_grayEffects">有一个分组要给应用变灰，但所有变灰效果都关着。</string>
+    <string name="usageStats_inGroups">所属分组</string>
+    <string name="usageStats_noGroups">还没有分组。在首页创建一个。</string>
+
+    <!-- 首页上的卡片 -->
+    <string name="ruleGroups_card_usedOf">%1$s / %2$s</string>
+    <string name="ruleGroups_card_allExcept">除…之外全部</string>
+    <string name="ruleGroups_status_offUntil">关闭，直到 %s</string>
+    <string name="ruleGroups_status_usedUp">已用完</string>
+    <string name="ruleGroups_status_locked">已锁定</string>
+    <string name="ruleGroups_status_gray">变灰</string>
+    <string name="ruleGroups_status_wait">等待 %s</string>
+    <string name="ruleGroups_status_scrollBreaks">刷屏休息</string>
+    <string name="ruleGroups_status_noSteps">没有步骤</string>
+
+    <!-- 分组覆盖的范围，作为句子的主语 -->
+    <string name="ruleGroups_scope_nothingYet">还没有应用或网站</string>
+    <string name="ruleGroups_scope_allApps">所有应用</string>
+    <string name="ruleGroups_scope_everything">所有应用和网站</string>
+    <string name="ruleGroups_scope_allWebsites">所有网站</string>
+    <string name="ruleGroups_scope_allExcept">除 %s 外的所有应用</string>
+    <string name="ruleGroups_scope_andAllWebsites">%s 和所有网站</string>
+    <plurals name="ruleGroups_scope_andMore">
+        <item quantity="one">%1$s 等 %2$d 个</item>
+        <item quantity="other">%1$s 等 %2$d 个</item>
+    </plurals>
+    <plurals name="ruleGroups_scope_moreApps">
+        <item quantity="one">%1$s 等 %2$d 个应用</item>
+        <item quantity="other">%1$s 等 %2$d 个应用</item>
+    </plurals>
+    <string name="ruleGroups_scope_plusWebsites">%1$s，另加 %2$s</string>
+    <string name="ruleGroups_budget_perDay">%s/天</string>
+    <string name="ruleGroups_budget_perHour">%s/小时</string>
+    <string name="ruleGroups_schedule_always">始终</string>
+    <string name="ruleGroups_schedule_everyDay">每天</string>
+    <string name="ruleGroups_schedule_weekdays">工作日</string>
+    <string name="ruleGroups_schedule_weekends">周末</string>
+    <string name="ruleGroups_schedule_onDays">%s</string>
+    <string name="ruleGroups_schedule_window">%1$s %2$s 至 %3$s</string>
+    <string name="ruleGroups_schedule_windowShort">%1$s %2$s–%3$s</string>
+    <plurals name="ruleGroups_schedule_windows">
+        <item quantity="one">在 %d 个时间段内</item>
+        <item quantity="other">在 %d 个时间段内</item>
+    </plurals>
+    <plurals name="ruleGroups_schedule_windowsShort">
+        <item quantity="one">%d 个时间段</item>
+        <item quantity="other">%d 个时间段</item>
+    </plurals>
+    <plurals name="ruleGroups_schedule_moreWindows">
+        <item quantity="one">还有 %d 个</item>
+        <item quantity="other">还有 %d 个</item>
+    </plurals>
+
+    <!-- 把规则写成一句话。{scope}、{budget}、{schedule}、{steps} 会被填入，位置按各语言的习惯摆放。
+         数量的含义是这个分组命中了多少项。 -->
+    <plurals name="ruleGroups_sentence_budget">
+        <item quantity="one">{scope}可用 {budget}{schedule}。</item>
+        <item quantity="other">{scope}可用 {budget}{schedule}。</item>
+    </plurals>
+    <plurals name="ruleGroups_sentence_noBudget">
+        <item quantity="one">{scope}{steps}{schedule}。</item>
+        <item quantity="other">{scope}{steps}{schedule}。</item>
+    </plurals>
+    <string name="ruleGroups_sentence_scheduleJoin">" %s"</string>
+    <string name="ruleGroups_sentence_empty">这个分组覆盖 {scope}。</string>
+    <plurals name="ruleGroups_steps_nothingYet">
+        <item quantity="one">还没有任何步骤</item>
+        <item quantity="other">还没有任何步骤</item>
+    </plurals>
+    <plurals name="ruleGroups_steps_wait">
+        <item quantity="one">打开前等待 {wait}</item>
+        <item quantity="other">打开前等待 {wait}</item>
+    </plurals>
+    <plurals name="ruleGroups_steps_gray">
+        <item quantity="one">变灰</item>
+        <item quantity="other">变灰</item>
+    </plurals>
+    <plurals name="ruleGroups_steps_scroll">
+        <item quantity="one">刷够 {scroll} 后休息一下</item>
+        <item quantity="other">刷够 {scroll} 后休息一下</item>
+    </plurals>
+    <plurals name="ruleGroups_steps_lock">
+        <item quantity="one">被锁定</item>
+        <item quantity="other">被锁定</item>
+    </plurals>
+    <string name="ruleGroups_before_wait">每次打开都要先等 {wait}。</string>
+    <string name="ruleGroups_before_grayAlways">全程保持变灰。</string>
+    <string name="ruleGroups_before_scroll">连续刷 {scroll} 后会中断一次。</string>
+    <plurals name="ruleGroups_after_lock">
+        <item quantity="one">之后就会锁定。</item>
+        <item quantity="other">之后就会锁定。</item>
+    </plurals>
+    <plurals name="ruleGroups_after_gray">
+        <item quantity="one">之后就会变灰。</item>
+        <item quantity="other">之后就会变灰。</item>
+    </plurals>
+    <plurals name="ruleGroups_after_grayFrom">
+        <item quantity="one">从 {gray} 起变灰。</item>
+        <item quantity="other">从 {gray} 起变灰。</item>
+    </plurals>
+    <plurals name="ruleGroups_after_grayFromThenLock">
+        <item quantity="one">从 {gray} 起变灰，之后再锁定。</item>
+        <item quantity="other">从 {gray} 起变灰，之后再锁定。</item>
+    </plurals>
+    <string name="ruleGroups_after_nothing">之后：{steps}。</string>
+    <string name="ruleGroups_steps_nothingHappens">暂时什么也不会发生</string>
+    <!-- 没有额度的分组的第二段；{budget} 是添加额度的入口 -->
+    <string name="ruleGroups_noBudget_value">没有时间额度</string>
+    <string name="ruleGroups_noBudget_withSteps">{budget}，所以从第一分钟起就生效。</string>
+    <string name="ruleGroups_noBudget">{budget}。</string>
+    <string name="ruleGroups_overlap">%1$s 也覆盖 %2$s。</string>
+    <!-- 数量的含义是有多少个步骤在等同一项权限 -->
+    <plurals name="ruleGroups_permission_steps">
+        <item quantity="one">%s 暂时无法生效。</item>
+        <item quantity="other">%s 暂时无法生效。</item>
+    </plurals>
+    <!-- 锁定永远轮不到执行的步骤；数量的含义是有多少个 -->
+    <string name="ruleGroups_idle_noBudget_title">从第一分钟起就锁定</string>
+    <plurals name="ruleGroups_idle_noBudget_message">
+        <item quantity="one">%s 永远轮不到生效。设一个时间额度，就能把锁定延到额度用完再开始。</item>
+        <item quantity="other">%s 永远轮不到生效。设一个时间额度，就能把锁定延到额度用完再开始。</item>
+    </plurals>
+    <string name="ruleGroups_idle_setBudget">设置额度</string>
+    <string name="ruleGroups_idle_grayAtLock_title">变灰与锁定同时开始</string>
+    <string name="ruleGroups_idle_grayAtLock_message">这样它就永远不会出现。选一个更早的时间。</string>
+    <string name="ruleGroups_idle_grayAtLock_action">更早</string>
+    <string name="ruleGroups_hint_tapToChange">点按任意带下划线的部分即可修改。</string>
+    <string name="ruleGroups_hint_pastMidnight">点按任意带下划线的部分即可修改。这个时间段跨过午夜，%s 也随之顺延：它们在时间段打开期间计数，不会在午夜清零。</string>
+
+    <!-- 今天的使用量对比额度 -->
+    <string name="ruleGroups_today">今天</string>
+    <string name="ruleGroups_thisHour">这一小时</string>
+    <string name="ruleGroups_today_left">剩余</string>
+    <string name="ruleGroups_today_groupOff">分组已关闭</string>
+    <string name="ruleGroups_today_freshBudget">时间段开始时，额度重新计算。</string>
+    <string name="ruleGroups_today_grayFrom">%s 起变灰</string>
+    <string name="ruleGroups_today_grayAt">%s 时变灰</string>
+    <string name="ruleGroups_today_lockedAt">%s 时锁定</string>
+
+    <!-- 各个步骤，按生效顺序排列 -->
+    <string name="ruleGroups_steps_title">会发生什么</string>
+    <string name="ruleGroups_step_wait">打开前等待</string>
+    <string name="ruleGroups_step_wait_on">每次打开等 %s</string>
+    <string name="ruleGroups_step_wait_off">给你一点反悔的时间</string>
+    <string name="ruleGroups_step_gray">变灰</string>
+    <string name="ruleGroups_step_gray_on">从 %s 起</string>
+    <string name="ruleGroups_step_gray_always">全程</string>
+    <string name="ruleGroups_step_gray_off">抽掉颜色，也抽掉大半吸引力</string>
+    <string name="ruleGroups_step_gray_from">开始变灰</string>
+    <string name="ruleGroups_step_gray_fromStart">第一分钟</string>
+    <string name="ruleGroups_step_gray_fromMinutes">%d 分钟</string>
+    <string name="ruleGroups_step_scrollBreak">打断无脑刷屏</string>
+    <string name="ruleGroups_step_scrollBreak_on">连续刷 %s 后</string>
+    <string name="ruleGroups_step_scrollBreak_off">信息流刷不完时弹出休息页</string>
+    <string name="ruleGroups_step_lock">锁定</string>
+    <string name="ruleGroups_step_lock_on">%s 时锁定，直到下个时间段</string>
+    <string name="ruleGroups_step_lock_on_day">%s 时锁定，当天剩余时间一直生效</string>
+    <string name="ruleGroups_step_lock_on_hour">%s 时锁定，直到下一个整点</string>
+    <string name="ruleGroups_step_lock_always">全程</string>
+    <string name="ruleGroups_step_lock_off">让它们够不着</string>
+    <string name="ruleGroups_step_onlySelectedApps">仅对所选的这组应用有效</string>
+    <string name="ruleGroups_step_tune">具体做法</string>
+    <string name="ruleGroups_steps_featureSettings">功能设置</string>
+    <string name="ruleGroups_steps_featureSettings_subtitle">变灰样式、锁定方式、刷屏休息。所有分组通用。</string>
+    <string name="ruleGroups_steps_featureSettings_description">整机设置，所有分组通用。</string>
+    <string name="ruleGroups_steps_featureSettings_lock">用遮罩屏蔽、挂起，或停用</string>
+    <string name="ruleGroups_steps_featureSettings_gray">系统灰度或屏幕滤镜，以及强度</string>
+    <string name="ruleGroups_steps_featureSettings_scroll">多容易触发休息，以及休息多久</string>
+    <string name="ruleGroups_when_title">何时生效</string>
+
+    <!-- 额度页面 -->
+    <string name="ruleGroups_budget_title">多少</string>
+    <string name="ruleGroups_budget_use">用 %s</string>
+    <string name="ruleGroups_budget_noLimit">不限</string>
+    <string name="ruleGroups_budget_less">减少</string>
+    <string name="ruleGroups_budget_more">增加</string>
+    <string name="ruleGroups_budget_period_day">每天</string>
+    <string name="ruleGroups_budget_period_hour">每小时</string>
+    <string name="ruleGroups_budget_perHour_hint">每到整点重新计算，即使你正在应用里。</string>
+    <string name="ruleGroups_budget_perDay_pastMidnight_hint">时间段跨过午夜，额度也随之顺延：它在时间段打开期间计数，不会在午夜清零。</string>
+    <string name="ruleGroups_budget_lastDays">这个分组近 7 天</string>
+    <string name="ruleGroups_budget_lastDays_average">每天 %s</string>
+    <string name="ruleGroups_budget_lastDays_empty">近 7 天这些应用没有记录。</string>
+    <string name="ruleGroups_budget_compare_less">%1$s 比上周平均每天少 %2$s。</string>
+    <string name="ruleGroups_budget_compare_more">%1$s 比上周平均每天多 %2$s。</string>
+    <string name="ruleGroups_budget_compare_same">正好等于上周的平均水平。</string>
+    <string name="ruleGroups_budget_compare_everyDayOver">每一天都超过了。</string>
+    <string name="ruleGroups_budget_compare_noDayOver">没有一天超过。</string>
+    <plurals name="ruleGroups_budget_compare_daysOver">
+        <item quantity="one">%2$d 天里有 %1$d 天超过。</item>
+        <item quantity="other">%2$d 天里有 %1$d 天超过。</item>
+    </plurals>
+
+    <!-- 新分组的创建流程 -->
+    <string name="ruleGroups_setup_what">统计什么</string>
+    <string name="ruleGroups_setup_how">多严格</string>
+    <string name="ruleGroups_setup_create">创建分组</string>
+    <string name="ruleGroups_template_intro">选一个最接近你想要的。里面的内容之后都能改。</string>
+    <string name="ruleGroups_templates_what">你在什么上花掉时间</string>
+    <string name="ruleGroups_templates_when">在特定时间</string>
+    <string name="ruleGroups_templates_phone">整部手机</string>
+    <string name="ruleGroups_template_feeds">社交信息流</string>
+    <string name="ruleGroups_template_feeds_description">Instagram、Reddit、X、TikTok、新闻类应用等每天 30 分钟，之后变灰并锁定。刷屏时会中断。</string>
+    <string name="ruleGroups_template_videosAndGames">视频与游戏</string>
+    <string name="ruleGroups_template_videosAndGames_description">Netflix、YouTube、Twitch 和所有游戏每天 1 小时，最后 15 分钟变灰，之后锁定。</string>
+    <string name="ruleGroups_template_shopping">购物</string>
+    <string name="ruleGroups_template_shopping_description">每个购物应用打开前等 10 秒，每天 30 分钟。</string>
+    <string name="ruleGroups_template_gamblingAndPorn">赌博与色情</string>
+    <string name="ruleGroups_template_gamblingAndPorn_description">博彩应用、赌博网站和色情网站始终锁定，在所有浏览器中都是。</string>
+    <string name="ruleGroups_template_nightsOff">夜间关闭</string>
+    <string name="ruleGroups_template_nightsOff_description">信息流、视频和游戏每天 %1$s 至 %2$s 锁定。</string>
+    <string name="ruleGroups_template_workHours">工作时段</string>
+    <string name="ruleGroups_template_workHours_description">信息流、视频、游戏、新闻和购物应用在工作日 %1$s 至 %2$s 锁定。</string>
+    <string name="ruleGroups_template_grayEssentials">除必需之外全部变灰</string>
+    <string name="ruleGroups_template_grayEssentials_description">所有应用和网站都变灰，除了电话、相机、地图、时钟、日历和你的聊天应用。</string>
+    <string name="ruleGroups_template_empty">从空白开始</string>
+    <string name="ruleGroups_template_empty_description">什么都没选，什么都没设。</string>
+    <string name="ruleGroups_setup_what_these">这些应用会计入。列表已预填常见的那几个，把不符合的取消勾选。</string>
+    <string name="ruleGroups_setup_what_except">除了你在这里勾选的，其他全部计入。把需要照常使用的勾上。</string>
+    <string name="ruleGroups_setup_what_hint">网站功能在 Chrome、Firefox 及其大多数同类中有效。更多应用和网站可以在分组页面添加。</string>
+    <string name="ruleGroups_setup_budget_description">这个分组里的应用和网站总共能用多久。</string>
+    <string name="ruleGroups_setup_schedule_hint">确切的日期和时间可以在分组页面设置。</string>
+    <string name="ruleGroups_schedulePreset_always">始终</string>
+    <string name="ruleGroups_schedulePreset_weekdays">工作日 10:00 至 22:00</string>
+    <string name="ruleGroups_schedulePreset_workHours">工作日 09:00 至 17:00</string>
+    <string name="ruleGroups_schedulePreset_evenings">傍晚 18:00 至 23:00</string>
+    <string name="ruleGroups_schedulePreset_nights">夜间 22:00 至 07:00</string>
+    <string name="ruleGroups_schedulePreset_mornings">上午，至 09:00</string>
+    <string name="ruleGroups_schedulePreset_weekends">周末</string>
+    <!-- endregion -->
+    <!-- region 功能：勿扰模式 -->
+    <string name="feature_doNotDisturb">「勿扰模式」</string>
+    <string name="feature_doNotDisturb_subtitle">让它成为新的默认状态</string>
+    <string name="feature_doNotDisturb_description">getabreak 运行期间自动开启勿扰模式。可在系统设置里配置例外。</string>
+    <string name="feature_doNotDisturb_systemSettings">系统设置</string>
+    <string name="feature_doNotDisturb_systemSettings_description">打开 Android 设置来微调勿扰模式。</string>
+    <!-- endregion -->
+
+    <!-- region 功能：灰度 -->
+    <string name="feature_grayscale">变灰</string>
+    <string name="feature_grayscale_subtitle">灰的样子</string>
+    <string name="feature_grayscale_description">把分组变灰的内容抽掉颜色，也抽掉大半吸引力。哪些应用、何时、用多少之后变灰，都在分组里设置。</string>
+    <string name="feature_grayscale_extraDim">额外调暗</string>
+    <string name="feature_grayscale_extraDim_description">被覆盖的应用打开时，比亮度滑块能调到的最暗还暗。长按可设置暗到什么程度。</string>
+    <string name="feature_grayscale_ignoreNonFullScreen">忽略弹窗与面板</string>
+    <string name="feature_grayscale_ignoreNonFullScreen_description">音量面板或状态栏不再让颜色来回跳。</string>
+    <string name="feature_grayscale_noEffects">请先打开灰度、额外调暗或屏幕滤镜。</string>
+    <string name="feature_grayscale_noEffects_noPermission">请先打开屏幕滤镜，或设置系统灰度。</string>
+    <string name="feature_grayscale_systemGrayscale">灰度</string>
+    <string name="feature_grayscale_systemGrayscale_description">系统自带的颜色滤镜，在被覆盖的应用打开时生效。不耗电。</string>
+    <string name="feature_grayscale_screenFilter">屏幕滤镜</string>
+    <string name="feature_grayscale_screenFilter_description">冲淡颜色并模糊，无需任何设置。系统灰度需要电脑或 Shizuku，只需一次。</string>
+    <string name="feature_grayscale_screenFilter_description_granted">叠加在系统灰度之上，用于灰度太容易被忽略的时候。</string>
+    <string name="feature_grayscale_screenFilter_intensity">滤镜强度</string>
+    <string name="feature_grayscale_screenFilter_intensity_description">开得多狠。太强的话文字会难读。</string>
+    <string name="feature_grayscale_screenFilter_effects">滤镜的作用</string>
+    <string name="feature_grayscale_screenFilter_effects_description">遮罩会抽走颜色和对比度。模糊需要 Android 12，且在省电模式下暂停。</string>
+    <string name="feature_grayscale_screenFilter_effects_shade">遮罩</string>
+    <string name="feature_grayscale_screenFilter_effects_blur">模糊</string>
+    <string name="feature_grayscale_screenFilter_effects_both">两者</string>
+    <string name="feature_grayscale_screenFilter_percent">%d%%</string>
+    <string name="feature_grayscale_screenFilter_summary_shade">遮罩 %d%%</string>
+    <string name="feature_grayscale_screenFilter_summary_blur">模糊 %d%%</string>
+    <string name="feature_grayscale_screenFilter_summary_both">遮罩与模糊 %d%%</string>
+    <string name="feature_grayscale_preview_normal">正常</string>
+    <string name="feature_grayscale_preview_gray">变灰后</string>
+    <!-- endregion -->
+
+    <!-- region 功能：暂停 -->
+    <string name="feature_pause">暂停按钮</string>
+    <string name="feature_pause_subtitle">你自己选的休息</string>
+    <string name="feature_pause_description">把 getabreak 暂停几分钟，用于你真需要手机的时候。</string>
+    <string name="feature_pause_duration">暂停时长</string>
+    <string name="feature_pause_duration_description">暂停结束后，getabreak 自动恢复。</string>
+    <string name="feature_pause_minimumTimeBetween">两次暂停的最短间隔</string>
+    <string name="feature_pause_minimumTimeBetween_description">免得暂停悄悄变成习惯。</string>
+    <string name="feature_pause_fromAssistant">语音助手</string>
+    <string name="feature_pause_fromAssistant_description">把 getabreak 设为默认语音助手应用即可暂停。（语音助手通常通过长按 Home 键打开。）</string>
+    <string name="feature_pause_fromHardwareButton">硬件按键</string>
+    <string name="feature_pause_fromHardwareButton_description">选一个硬件按键，长按 2 秒即可暂停 getabreak。</string>
+    <string name="feature_pause_fromHardwareButton_press">按下手机上的任意硬件按键</string>
+    <string name="feature_pause_fromHardwareButton_noButtonPressed">还没有按下按键</string>
+    <string name="feature_pause_fromHardwareButton_selected">已选按键：%s</string>
+    <string name="feature_pause_fromHardwareButton_appNotRunning">分配硬件按键时 getabreak 必须在运行。</string>
+    <string name="feature_pause_ways">暂停的方式</string>
+    <string name="feature_pause_fromQuickSettings">快捷设置</string>
+    <string name="feature_pause_fromQuickSettings_description">点按可把暂停开关放进快捷设置。</string>
+    <string name="feature_pause_fromQuickSettings_alreadyAdded">暂停开关已经在你的快捷设置里了。</string>
+    <string name="feature_pause_fromNotification">通知</string>
+    <string name="feature_pause_fromNotification_description">getabreak 的通知上带一个暂停按钮。</string>
+    <string name="feature_pause_fromNotification_blocked">允许通知后，getabreak 的通知上就会带暂停按钮。</string>
+    <string name="feature_pause_affectedFeatures">受影响的功能</string>
+    <string name="feature_pause_affectedFeatures_all">全部功能</string>
+    <string name="feature_pause_affectedFeatures_count">%2$d 个功能中的 %1$d 个</string>
+    <string name="feature_pause_affectedFeatures_dialogHint">选择暂停会关掉哪些功能。未勾选的功能在暂停期间照常运行。</string>
+    <!-- endregion -->
+
+    <!-- region 功能：紧急刹车 -->
+    <string name="feature_brake">紧急刹车</string>
+    <string name="feature_brake_subtitle">立刻全部拉满</string>
+    <string name="feature_brake_description">用于你发现自己要滑走的那一刻。在设定的时间内，你开启的所有分组和功能都按最严格的方式运行：整块屏幕变灰，已锁定的应用不管额度还剩多少都保持锁定，时间表不再起作用，暂停功能关闭。</string>
+    <string name="feature_brake_status_off">先选时长，然后拉下刹车。</string>
+    <string name="feature_brake_status_notActivated">请先在上方打开刹车。</string>
+    <string name="feature_brake_status_notRunning">getabreak 没在运行，没什么可刹的。</string>
+    <string name="feature_brake_status_on">刹车生效中，直到 %s。在此之前设置已锁定。</string>
+    <string name="feature_brake_status_ending">你已经要求结束。刹车将在 %s 解除。</string>
+    <string name="feature_brake_duration">时长</string>
+    <string name="feature_brake_duration_other">其他…</string>
+    <string name="feature_brake_pull">拉下刹车</string>
+    <string name="feature_brake_extendBy">延长 %s</string>
+    <string name="feature_brake_undo">撤销</string>
+    <string name="feature_brake_endEarly">提前结束</string>
+    <string name="feature_brake_endEarly_message">刹车会在你提出后 %d 分钟解除，在此之前一直生效。中途可以改变主意。</string>
+    <string name="feature_brake_endEarly_confirm">开始等待</string>
+    <string name="feature_brake_keepOn">保持开启</string>
+    <string name="feature_brake_noPause">刹车期间不能暂停。它会一直运行到 %s。</string>
+    <string name="feature_brake_stop_locked">刹车生效中，直到 %s。在此之前无法停止 getabreak。</string>
+    <string name="feature_brake_ways">拉刹车的方式</string>
+    <string name="feature_brake_fromQuickSettings_description">点按可把刹车开关放进快捷设置。它会按你上次选的时长拉下。</string>
+    <string name="feature_brake_fromQuickSettings_alreadyAdded">刹车开关已经在你的快捷设置里了。</string>
+    <string name="feature_brake_fromHomeScreen">主屏幕</string>
+    <string name="feature_brake_fromHomeScreen_description">点按可在主屏幕放一个刹车图标。长按 getabreak 图标也会提供同样的快捷方式。</string>
+    <string name="feature_brake_fromHomeScreen_unsupported">你的桌面不支持应用添加图标。请改为长按 getabreak 图标。</string>
+    <string name="feature_brake_shortcut">刹车</string>
+    <string name="feature_brake_autoPull_header">自动拉下</string>
+    <string name="feature_brake_autoPull">帮我自动拉</string>
+    <string name="feature_brake_autoPull_description">在 %2$d 分钟内被抓到 %1$d 次无脑刷屏，就自动拉下刹车 %3$s。仅在「打断无脑刷屏」开启时计数。</string>
+    <string name="feature_brake_autoPull_breaks">被抓次数</string>
+    <string name="feature_brake_autoPull_breaks_description">多少次才算，跨所有应用累计。</string>
+    <string name="feature_brake_autoPull_window">在此之内</string>
+    <string name="feature_brake_autoPull_window_description">间隔比这更长，就不累计。</string>
+    <string name="feature_brake_autoPull_duration">刹车时长</string>
+    <string name="feature_brake_autoPull_duration_description">自动拉下的刹车不能撤销，只能提前结束。</string>
+    <!-- endregion -->
+
+    <!-- region 功能：打断无脑刷屏 -->
+    <string name="feature_doomScrolling">打断无脑刷屏</string>
+    <string name="feature_doomScrolling_subtitle">灵敏度与冷却</string>
+    <string name="feature_doomScrolling_description">实验性功能。识别分组覆盖的应用中长时间、快速的滑动，并提供一个出口。哪些应用、多久之后触发，在分组里设置。</string>
+    <string name="feature_doomScrolling_timeUntilWarning">多久后提醒</string>
+    <string name="feature_doomScrolling_cooldownTime">冷却</string>
+    <string name="feature_doomScrolling_cooldownTime_description">休息之后，应用（或只是触发它的那个信息流）要关多久。</string>
+    <string name="feature_doomScrolling_sensitivity">灵敏度</string>
+    <string name="feature_doomScrolling_sensitivity_description">滑多快才会触发休息。刷不完的信息流无论快慢都会被抓到。</string>
+    <string name="feature_doomScrolling_sensitivity_relaxed">宽松</string>
+    <string name="feature_doomScrolling_sensitivity_balanced">适中</string>
+    <string name="feature_doomScrolling_sensitivity_strict">严格</string>
+    <string name="feature_doomScrolling_sensitivity_screensPerMinute">每分钟约 %d 屏及以上</string>
+
+    <!-- 检测到无脑刷屏时弹出的页面 -->
+    <string name="feature_doomScrolling_warning_title">醒醒！</string>
+    <string name="feature_doomScrolling_warning_message">看起来你陷入了无脑刷屏的循环。</string>
+    <string name="feature_doomScrolling_warning_exit">带我离开</string>
+    <string name="feature_doomScrolling_warning_finishFirst">看完这条就走</string>
+    <string name="feature_doomScrolling_warning_pullBrake">拉下刹车 %s</string>
+    <string name="feature_doomScrolling_warning_context_intensity">你在最近 %2$d 分钟里划过了大约 %1$d 屏。</string>
+    <string name="feature_doomScrolling_warning_context_endless">这个信息流一直在加载更多。你已经刷了 %1$d 分钟。</string>
+    <string name="feature_doomScrolling_warning_context_shortVideos">你在最近 %2$d 分钟里划过了 %1$d 个短视频。</string>
+    <string name="feature_doomScrolling_warning_context_probation">休息完马上就回来了。这次整个应用都会暂停。</string>
+    <string name="feature_doomScrolling_warning_context_brakePulled">这是短时间内的第 %1$d 次。刹车生效中，直到 %2$s。</string>
+    <string name="feature_doomScrolling_warning_context_braking">刹车生效中，这个应用要到 %s 才能用。</string>
+    <string name="feature_doomScrolling_guideOut_title">说好的就是说好的</string>
+    <string name="feature_doomScrolling_guideOut_message">希望那条不错。现在带你回桌面。</string>
+    <string name="feature_doomScrolling_cooldown_title">还在冷却</string>
+    <string name="feature_doomScrolling_cooldown_message">这里没什么会跑掉。多给自己几分钟。</string>
+    <string name="feature_doomScrolling_cooldown_context_app">%1$s 将在 %2$d 分钟后回来。</string>
+    <string name="feature_doomScrolling_cooldown_context_surface">%1$s 里的这个信息流将在 %2$d 分钟后回来。</string>
+    <!-- endregion -->
+
+    <!-- region 功能：等待与锁定 -->
+    <string name="feature_disableApps">等待与锁定</string>
+    <string name="feature_disableApps_subtitle">锁定的应用怎么被挡住</string>
+    <string name="feature_disableApps_description">锁定生效后会对应用做什么。哪些应用、何时、多久，在分组里设置。等待功能这里不需要配置。</string>
+    <string name="feature_disableApps_operationMode">锁定的效果</string>
+    <string name="feature_disableApps_operationMode_block">屏蔽</string>
+    <string name="feature_disableApps_operationMode_block_description">在应用上盖一层屏幕，并留一个返回的出口</string>
+    <string name="feature_disableApps_operationMode_suspend">挂起</string>
+    <string name="feature_disableApps_operationMode_suspend_needsShizuku">挂起应用需要 Shizuku 在运行。</string>
+    <string name="feature_disableApps_operationMode_suspend_description">在桌面里变灰，无法启动</string>
+    <string name="feature_disableApps_operationMode_suspend_requirement">需要 Shizuku</string>
+    <string name="feature_disableApps_operationMode_deactivate">停用</string>
+    <string name="feature_disableApps_operationMode_deactivate_description">从桌面消失，通知也没了</string>
+    <string name="feature_disableApps_operationMode_deactivate_requirement">需要设备所有者权限，大多数手机给不了</string>
+    <string name="feature_disableApps_overlay_title">时间到了！</string>
+    <string name="feature_disableApps_overlay_message">这个应用今天的屏幕时间已经用完了。</string>
+    <string name="feature_disableApps_overlay_message2">休息一下，明天再来。</string>
+    <string name="feature_disableApps_overlay_message_website">这个网站今天的屏幕时间已经用完了。</string>
+    <string name="feature_disableApps_overlay_goBack">返回</string>
+
+    <!-- 应用打开前拦住它的页面 -->
+    <string name="feature_disableApps_wait_title">稍等一下</string>
+    <string name="feature_disableApps_wait_message">%1$s 马上就好。有足够时间反悔。</string>
+    <string name="feature_disableApps_wait_leave">算了</string>
+    <string name="feature_disableApps_wait_open">打开 %1$s</string>
+    <!-- endregion -->
+
+    <!-- region 功能：承诺密码 -->
+    <string name="feature_commitmentPassword">承诺密码</string>
+    <string name="feature_commitmentPassword_subtitle">用口令锁定设置</string>
+    <string name="feature_commitmentPassword_description">用口令保护选定的 getabreak 设置，让它们不会被冲动改掉。需要设备管理员。</string>
+    <string name="feature_commitmentPassword_requiresDeviceAdmin_message">授予设备管理员权限才能启用承诺密码。</string>
+    <string name="feature_commitmentPassword_walkthrough_title">开启之前</string>
+    <string name="feature_commitmentPassword_walkthrough_lock">锁定你选的那些设置</string>
+    <string name="feature_commitmentPassword_walkthrough_passphrase">修改它们需要你的口令</string>
+    <string name="feature_commitmentPassword_walkthrough_stop">它们被锁定时无法停止 getabreak</string>
+    <string name="feature_commitmentPassword_walkthrough_attempts">输错 3 次将暂停输入 5 分钟</string>
+    <string name="feature_commitmentPassword_walkthrough_recovery">忘了？恢复要等 24 小时</string>
+    <string name="feature_commitmentPassword_walkthrough_next">下一步会给你口令。请妥善保管。</string>
+    <string name="feature_commitmentPassword_walkthrough_proceed">我明白了</string>
+    <string name="feature_commitmentPassword_generated_title">你的口令</string>
+    <string name="feature_commitmentPassword_generated_message">现在保存这个口令。修改受保护的设置时需要它。</string>
+    <string name="feature_commitmentPassword_generated_hint">继续之前，把它写下来或存到安全的地方。</string>
+    <string name="feature_commitmentPassword_generated_copied">口令已复制到剪贴板</string>
+    <string name="feature_commitmentPassword_generated_confirm">我已保存口令</string>
+    <string name="feature_commitmentPassword_copy">复制口令</string>
+    <string name="feature_commitmentPassword_unlock">解锁设置</string>
+    <string name="feature_commitmentPassword_unlock_description">输入口令，为本次会话解锁设置。</string>
+    <string name="feature_commitmentPassword_enter">输入口令</string>
+    <string name="feature_commitmentPassword_verify">验证</string>
+    <string name="feature_commitmentPassword_incorrect">口令错误</string>
+    <plurals name="feature_commitmentPassword_attemptsRemaining">
+        <item quantity="one">还剩 %d 次尝试</item>
+        <item quantity="other">还剩 %d 次尝试</item>
+    </plurals>
+    <string name="feature_commitmentPassword_show">显示口令</string>
+    <string name="feature_commitmentPassword_hide">隐藏口令</string>
+    <string name="feature_commitmentPassword_lockedOut">失败次数过多。请在 %s 后重试。</string>
+    <string name="feature_commitmentPassword_forgot">忘记口令了？</string>
+    <string name="feature_commitmentPassword_recovery_title">口令恢复</string>
+    <string name="feature_commitmentPassword_recovery_message">如果忘了口令，可以启动 24 小时恢复计时。计时结束后即可重设口令。\n\n恢复期间设置保持锁定。</string>
+    <string name="feature_commitmentPassword_recovery_initiate">开始 24 小时恢复</string>
+    <string name="feature_commitmentPassword_recovery_inProgress">恢复进行中</string>
+    <string name="feature_commitmentPassword_recovery_timeRemaining">剩余时间：%s</string>
+    <string name="feature_commitmentPassword_recovery_ready">可以恢复了</string>
+    <string name="feature_commitmentPassword_recovery_ready_message">24 小时等待期已结束。现在可以重设口令。</string>
+    <string name="feature_commitmentPassword_recovery_channelName">密码恢复</string>
+    <string name="feature_commitmentPassword_recovery_channelDescription">关于承诺密码恢复的通知</string>
+    <string name="feature_commitmentPassword_recovery_cancel">取消恢复</string>
+    <string name="feature_commitmentPassword_recovery_complete">重设口令</string>
+    <string name="feature_commitmentPassword_disable_title">关闭保护？</string>
+    <string name="feature_commitmentPassword_disable_enterPassword">输入口令以关闭承诺密码。</string>
+    <string name="feature_commitmentPassword_disable">关闭保护</string>
+    <string name="feature_commitmentPassword_banner_locked">设置已锁定。输入口令才能编辑。</string>
+    <string name="feature_commitmentPassword_banner_unlocked">本次会话已解锁设置。</string>
+    <string name="feature_commitmentPassword_lockAgain">重新锁定</string>
+    <string name="feature_commitmentPassword_lockedBadge">已被你的承诺密码锁定</string>
+    <string name="feature_commitmentPassword_selectFeatures">锁定哪些</string>
+    <string name="feature_commitmentPassword_selectAll">全部</string>
+    <string name="feature_commitmentPassword_selectNone">全不选</string>
+    <string name="feature_commitmentPassword_featuresSelected">已选 %1$d / %2$d</string>
+    <string name="feature_commitmentPassword_deviceOwner_hint_title">可选：用设备所有者加强保护</string>
+    <string name="feature_commitmentPassword_deviceOwner_hint_subtitle">承诺密码在设备管理员下即可工作。设备所有者还能阻止卸载 getabreak。点按查看 ADB 命令。</string>
+    <string name="feature_commitmentPassword_stop_locked">停止已被承诺密码锁定。请先解锁设置。</string>
+    <string name="feature_commitmentPassword_tamper_overlay_title">暂时锁定</string>
+    <string name="feature_commitmentPassword_tamper_overlay_message_uninstall">设置锁定时无法卸载 getabreak。</string>
+    <string name="feature_commitmentPassword_tamper_overlay_message_deviceAdmin">设置锁定时无法关闭 getabreak 的设备管理员。</string>
+    <string name="feature_commitmentPassword_tamper_overlay_message_accessibility">设置锁定时无法关闭 getabreak 的无障碍服务。</string>
+    <string name="feature_commitmentPassword_tamper_overlay_reassurance">你已回到主屏幕，保护仍然开启。</string>
+    <string name="feature_commitmentPassword_tamper_overlay_action_backHome">返回首页</string>
+    <string name="feature_commitmentPassword_tamper_iconDescription">安全警告图标</string>
+    <!-- endregion -->
+
+    <!-- region 设备管理员与无障碍警告 -->
+    <string name="deviceAdminRevoked_title">设备管理员已被停用</string>
+    <string name="deviceAdminRevoked_message">移除设备管理员时，承诺密码正在生效。这会削弱保护，可能导致卸载或绕过。</string>
+    <string name="deviceAdminRevoked_prompt">要继续，请原样输入这句话：</string>
+    <string name="deviceAdminRevoked_requiredPhrase">我正在做一个短期的决定，而且我会后悔</string>
+    <string name="deviceAdminRevoked_inputLabel">输入这句话</string>
+    <string name="deviceAdminRevoked_continue">我明白，继续</string>
+    <string name="deviceAdminRevoked_reenable_explanation">设备管理员让你的承诺更难被绕过。重新启用以恢复完整保护。</string>
+    <string name="deviceAdminRevoked_disableRequestedWarning">承诺密码正在生效。关闭设备管理员会让 getabreak 更容易被卸载和绕过。</string>
+    <string name="accessibilityDisabledWarning_title">无障碍服务已被关闭</string>
+    <string name="accessibilityDisabledWarning_message">承诺密码生效期间，getabreak 的无障碍服务被关闭了。重新启用以保持承诺设置生效。</string>
+    <!-- endregion -->
+    <!-- region 极简桌面小工具 -->
+    <string name="widget_minimalLauncher_name">getabreak 启动小工具</string>
+    <string name="widget_minimalLauncher_description">纯文字的应用启动小工具，只放选定的应用。</string>
+    <string name="widget_minimalLauncher_empty">点按这里选择应用</string>
+    <string name="widget_minimalLauncher_configure_title">设置启动小工具</string>
+    <string name="widget_minimalLauncher_available_emptyFiltered">没有符合筛选条件的应用。</string>
+    <string name="widget_minimalLauncher_search_clear">清除搜索</string>
+    <string name="widget_minimalLauncher_filter_category_empty">没有可用的分类</string>
+    <string name="widget_minimalLauncher_label_display">显示名称</string>
+    <string name="widget_minimalLauncher_label_display_hint">留空则使用应用原本的名称。</string>
+    <string name="widget_minimalLauncher_label_original">原名：%1$s</string>
+    <string name="widget_minimalLauncher_label_edit">编辑名称</string>
+    <string name="widget_minimalLauncher_reorder_drag">拖动以重新排序</string>
+    <string name="widget_style_title">自定义小工具</string>
+    <string name="widget_style_theme_description">选「跟随系统」时，手机变暗它就变暗。</string>
+    <string name="widget_style_background">背景</string>
+    <string name="widget_style_background_description">拉到最低时，壁纸上只剩文字。</string>
+    <string name="widget_style_background_percent">%d%%</string>
+    <string name="widget_style_summary">%1$s，背景 %2$s</string>
+    <string name="widget_today_name">屏幕用时</string>
+    <string name="widget_today_description">今天的屏幕使用时间、解锁次数和滑动距离。拉大后还会显示最常用的应用以及剩余额度。</string>
+    <string name="widget_today_screenTime">屏幕用时</string>
+    <string name="widget_today_scrolled">累计滑动</string>
+    <string name="widget_today_noApps">今天还没有使用应用</string>
+    <string name="widget_today_allLeftOut">今天的应用都被排除在统计外</string>
+    <string name="widget_parts_title">显示</string>
+    <string name="widget_today_parts_description">紧挨着屏幕使用时间显示，小工具尺寸够大时才会出现。</string>
+    <string name="widget_today_part_unlocks">解锁次数</string>
+    <string name="widget_today_part_scrolled">滑动距离</string>
+    <string name="widget_today_part_vsUsual">与平常一天对比</string>
+    <string name="widget_today_part_apps">最常用的应用</string>
+    <string name="widget_today_part_budgets">额度</string>
+    <string name="widget_today_part_scrollComparison">距离的形象化对比</string>
+    <string name="widget_today_vsUsual_less">比平常此刻少 %s</string>
+    <string name="widget_today_vsUsual_more">比平常此刻多 %s</string>
+    <string name="widget_today_vsUsual_same">和平常此刻差不多</string>
+    <string name="widget_today_vsUsual_label">对比平常</string>
+    <!-- 与平常一天的差值，用数字表示，用在没有空间写一整句的地方 -->
+    <string name="widget_today_off">getabreak 已关闭</string>
+    <string name="widget_minimalLauncher_parts_description">每个应用今天用了多久，以及你的分组此刻锁定了哪些应用。</string>
+    <string name="widget_minimalLauncher_part_timeToday">今日用时</string>
+    <string name="widget_minimalLauncher_part_dimBlocked">变暗已锁定的应用</string>
+    <string name="widget_today_preview_screenTime">2 小时 6 分</string>
+    <string name="today_budget_left">剩余 %s</string>
+    <string name="today_budget_usedUp">已用完</string>
+    <!-- endregion -->
+
+    <!-- region 使用统计 -->
+    <string name="usageStats_more">更多</string>
+    <string name="usageStats_title">应用使用情况</string>
+    <string name="usageStats_usageAccessRequired">getabreak 需要「使用情况访问」权限才能显示屏幕使用时间。</string>
+    <string name="usageStats_usageAccess_restrictedSettingsHint">如果开关是灰的，说明 Android 因为它不是从应用商店安装而限制了它。请打开应用信息，点右上角三点菜单，先选「允许受限制的设置」。</string>
+    <string name="usageStats_timeframe_today">今天</string>
+    <string name="usageStats_timeframe_last7Days">7 天</string>
+    <string name="usageStats_timeframe_last30Days">30 天</string>
+    <string name="usageStats_timeframe_last90Days">90 天</string>
+    <string name="usageStats_timeframe_custom">自定义</string>
+    <string name="usageStats_timeframe_custom_title">选择日期范围</string>
+    <string name="usageStats_timeframe_custom_start">开始日期</string>
+    <string name="usageStats_timeframe_custom_end">结束日期</string>
+    <string name="usageStats_timeframe_custom_apply">应用</string>
+    <string name="usageStats_timeframe_custom_inputFormat">yyyy-MM-dd</string>
+    <string name="usageStats_timeframe_custom_switchToCalendar">改用日历选择</string>
+    <string name="usageStats_timeframe_custom_switchToInput">改用文字输入</string>
+    <string name="usageStats_selfMeasured">你的手机不允许 getabreak 读取系统的屏幕使用时间，所以这些数字是它自己统计的：只包含它运行期间看到的内容。</string>
+    <string name="usageStats_improvesOverTime">getabreak 运行越久，统计越准确。滑动数据只在它运行时才有。</string>
+    <string name="usageStats_dailyAverage">日均：%s</string>
+    <string name="usageStats_dailyAverage_short">日均</string>
+    <string name="usageStats_vsYesterday">对比昨天</string>
+    <string name="usageStats_vsPreviousPeriod">对比上一周期</string>
+    <string name="usageStats_timeOfDay">按小时看应用打开次数</string>
+    <string name="usageStats_byDay">按天</string>
+    <string name="usageStats_weekdayAverages">各星期平均</string>
+    <string name="usageStats_detoxImpact">戒断效果</string>
+    <string name="usageStats_grayscaleTime">变灰时长</string>
+    <string name="usageStats_colorRemaining">保留彩色的时长</string>
+    <string name="usageStats_scrollBreaks">刷屏休息</string>
+    <string name="usageStats_blocks">已屏蔽</string>
+    <string name="usageStats_launches">打开 %d 次</string>
+    <string name="usageStats_opens_short">次打开</string>
+    <string name="usageStats_sessions_short">次会话</string>
+    <string name="usageStats_avgSession">平均会话</string>
+    <string name="usageStats_unlocks_short">次解锁</string>
+    <string name="usageStats_appDetails">详情</string>
+    <string name="usageStats_quickActions">快捷操作</string>
+    <string name="usageStats_noActiveFeatures">没有可管理的内容，也没有功能在运行</string>
+    <string name="usageStats_lockedByBrake">刹车期间没有可管理的内容，直到 %s</string>
+    <string name="usageStats_lockedByPassword">承诺密码锁定这些设置期间，没有可管理的内容</string>
+    <string name="usageStats_addGrayscale">加入变灰</string>
+    <string name="usageStats_removeGrayscale">移出变灰</string>
+    <string name="usageStats_addScrollGuard">加入刷屏守护</string>
+    <string name="usageStats_removeScrollGuard">移出刷屏守护</string>
+    <string name="usageStats_disableApp">禁用应用</string>
+    <string name="usageStats_enableApp">启用应用</string>
+    <string name="usageStats_noData">这段时间没有数据</string>
+    <string name="usageStats_screenTime">屏幕使用时间</string>
+    <string name="usageStats_trend7d">7 天趋势</string>
+    <string name="usageStats_screenUnlocks">屏幕解锁次数</string>
+    <string name="usageStats_appCategories">应用分类</string>
+    <string name="usageStats_scrollIntensity">滑动强度</string>
+    <string name="usageStats_scrollIntensity_subtitle">综合滑动量与滑动速度</string>
+    <string name="usageStats_scrollIntensity_score">滑动强度</string>
+    <string name="usageStats_scrollIntensity_detail">%1$d 次滑动 · %2$.1f 次/分</string>
+    <string name="usageStats_scrollIntensity_info">综合滑动总次数与每分钟速率（采用平方根加权），让短暂的快速滑动压不过持续的刷屏。数值越高，说明刷得越凶。</string>
+    <string name="usageStats_exclusions_title">不计入统计</string>
+    <string name="usageStats_exclusions_description">屏幕使用时间只统计应用在屏幕上停留多久，不区分你在做什么。整晚运行的睡眠追踪应用，和整晚刷的信息流看起来一模一样。把这类应用排除在这里。</string>
+    <string name="usageStats_exclusions_categories">整个分类</string>
+    <string name="usageStats_exclusions_leftOut">当前已排除</string>
+    <string name="usageStats_exclusions_counted">当前计入</string>
+    <string name="usageStats_showMore">显示更多</string>
+    <string name="usageStats_showLess">收起</string>
+    <string name="usageStats_sort">排序方式</string>
+    <string name="usageStats_sort_screenTime">按屏幕使用时间</string>
+    <string name="usageStats_sort_opens">按打开次数</string>
+    <string name="usageStats_sort_scrollIntensity">按滑动强度</string>
+    <string name="usageStats_websites_title">网站用时</string>
+    <string name="usageStats_websites_optIn">getabreak 可以统计你在 %s 中每个网站停留多久。它只保留站点，永远不记录具体页面，数据也不会离开手机。</string>
+    <string name="usageStats_websites_optIn_action">统计网站用时</string>
+    <string name="usageStats_websites_empty">还没有统计。网站用时从你开启这项功能的那一刻开始计。</string>
+    <string name="usageStats_websites_partOf">已包含在浏览器的屏幕使用时间里。</string>
+    <string name="usageStats_websites_turnOff">关闭</string>
+    <string name="usageStats_websites_turnOff_title">停止统计网站？</string>
+    <string name="usageStats_websites_turnOff_message">已经统计的数据也会一起删除。</string>
+    <plurals name="usageStats_visits">
+        <item quantity="one">%d 次访问</item>
+        <item quantity="other">%d 次访问</item>
+    </plurals>
+    <string name="usageStats_visits_short">次访问</string>
+    <string name="usageStats_avgVisit">平均访问</string>
+    <string name="usageStats_sort_visits">按访问次数</string>
+    <string name="usageStats_blockSite">屏蔽网站</string>
+    <string name="usageStats_unblockSite">取消屏蔽</string>
+    <string name="usageStats_perspective">形象化</string>
+    <string name="usageStats_perspective_subtitle">同样的数字，变得可感知</string>
+    <string name="usageStats_perspective_footer">没有评判。只是这样更容易感受到时间。</string>
+    <string name="usageStats_odometer_label">的内容被划过</string>
+    <string name="usageStats_odometer_comparison">≈ %1$s × %2$s</string>
+    <string name="usageStats_odometer_floors">≈ 爬了 %1$d 层楼</string>
+    <string name="usageStats_timeValue_setup">你的一小时值多少钱？</string>
+    <string name="usageStats_timeValue_hint">点按看看你的屏幕时间换算成多少钱</string>
+    <string name="usageStats_timeValue_label">你的屏幕时间，按 %1$s 折算</string>
+    <string name="usageStats_timeValue_off">关闭</string>
+    <string name="usageStats_ratePerHour">%1$s/小时</string>
+
+    <!-- 「形象化」里用来对比滑动距离的地标 -->
+    <string name="landmark_statueOfLiberty">自由女神像</string>
+    <string name="landmark_eiffelTower">埃菲尔铁塔</string>
+    <string name="landmark_empireState">帝国大厦</string>
+    <string name="landmark_burjKhalifa">哈利法塔</string>
+    <string name="landmark_mountEverest">珠穆朗玛峰</string>
+    <string name="landmark_marathon">一场马拉松</string>
+
+    <string name="chart_tooltip_opens">%1$02d:00 · 打开 %2$d 次</string>
+    <string name="chart_tooltip_unlocks">%1$02d:00 · 解锁 %2$d 次</string>
+    <string name="chart_percent">%1$s %2$d%%</string>
+    <!-- endregion -->
+    <!-- region 引导流程 -->
+    <string name="onboarding_action_getStarted">开始</string>
+    <string name="onboarding_action_next">继续</string>
+    <string name="onboarding_action_skipSetup">跳过设置</string>
+    <string name="onboarding_skipSetup_dialog_title">跳过设置？</string>
+    <string name="onboarding_skipSetup_dialog_message">什么都不会配置。之后你可以在各个功能页面单独设置，也可以从「关于」页面重新走一遍这个流程。</string>
+    <string name="onboarding_skipSetup_dialog_confirm">跳过</string>
+    <string name="onboarding_progress_stepOf">第 %1$d 步，共 %2$d 步</string>
+    <string name="onboarding_welcome_title">把注意力拿回来</string>
+    <string name="onboarding_welcome_message">getabreak 帮你养成更健康的手机习惯：它可以让让人分心的应用变灰、打断刷不完的信息流，并在每天额度用完后屏蔽应用。接下来的步骤会按你实际使用手机的方式来做配置。</string>
+    <string name="onboarding_welcome_privacy">一切都留在你的设备上。getabreak 是开源的，没有广告，也不收集任何东西。</string>
+    <string name="onboarding_usageAccess_title">看看时间花在哪了</string>
+    <string name="onboarding_usageAccess_message">为了推荐该管哪些应用、以及一个你真能守住的每日额度，getabreak 需要系统的「使用情况访问」权限。它也会用来生成统计。数据不会离开手机。</string>
+    <string name="onboarding_usageAccess_grant">授予使用情况访问权限</string>
+    <string name="onboarding_usageAccess_granted">已授予。现在可以推荐真实的应用了。</string>
+    <string name="onboarding_usageAccess_skipHint">你可以跳过。那样我们会按应用分类来判断。</string>
+    <string name="onboarding_apps_title">让你分心的应用</string>
+    <string name="onboarding_apps_message">根据你的使用情况和应用分类，这些可能是最耗时间的那几个。如果不对，可以改选。接下来的步骤只对你最终保留的应用生效。</string>
+    <string name="onboarding_apps_loading">正在分析你的应用使用情况…</string>
+    <string name="onboarding_apps_empty">这台设备上没有找到合适的应用。之后每个功能仍然可以单独挑应用。</string>
+    <string name="onboarding_apps_avgUsage">每天 %s</string>
+    <plurals name="onboarding_apps_selectedCount">
+        <item quantity="one">已选 %d 个应用</item>
+        <item quantity="other">已选 %d 个应用</item>
+    </plurals>
+    <string name="onboarding_preset_title">要多严格？</string>
+    <string name="onboarding_preset_message">选一个起点。每个细节之后都能改。</string>
+    <string name="onboarding_preset_gentle">温和</string>
+    <string name="onboarding_preset_gentle_description">用休息页打断所选应用中刷不完的信息流。</string>
+    <string name="onboarding_preset_balanced">适中</string>
+    <string name="onboarding_preset_balanced_badge">推荐</string>
+    <string name="onboarding_preset_balanced_description">在温和的基础上，每日额度用完后让所选应用变灰。没了颜色，它们的吸引力会小很多。</string>
+    <string name="onboarding_preset_strict">严格</string>
+    <string name="onboarding_preset_strict_description">在适中的基础上，每日额度用完后直接屏蔽。变灰会提前一点提醒你。</string>
+    <string name="onboarding_preset_budget">每日额度</string>
+    <string name="onboarding_preset_budget_description">所选应用每天在被介入之前的可用时长。</string>
+    <string name="onboarding_preset_budget_suggested">根据你最近 7 天的使用情况推荐</string>
+    <string name="onboarding_permissions_title">几项权限</string>
+    <string name="onboarding_permissions_message">你的配置需要下面这些权限。想给哪些就给哪些，其余的之后可以在功能页面补上。</string>
+    <string name="onboarding_permissions_overlay">显示在其他应用上层</string>
+    <string name="onboarding_permissions_overlay_description">显示休息页和屏蔽应用需要它。</string>
+    <string name="onboarding_permissions_notifications">通知</string>
+    <string name="onboarding_permissions_notifications_description">戒断功能生效期间的状态与提醒。</string>
+    <string name="onboarding_permissions_secureSettings">灰度权限</string>
+    <string name="onboarding_permissions_secureSettings_description">一项特殊权限，让 getabreak 能控制系统颜色滤镜。</string>
+    <string name="onboarding_permissions_secureSettings_oneTap">点按授予。在你的设备上检测到了 Shizuku 或 root。</string>
+    <string name="onboarding_permissions_secureSettings_later">点按进入引导设置。也可以先跳过，我们会在首页提醒你。</string>
+    <string name="onboarding_permissions_accessibility">无障碍服务</string>
+    <string name="onboarding_permissions_accessibility_description">getabreak 的引擎：无障碍服务检测当前前台是哪个应用，并执行你的规则。没有数据会离开你的设备。</string>
+    <string name="onboarding_permissions_accessibility_auto">点按自动启用。</string>
+    <string name="onboarding_permissions_accessibility_manual">点按打开无障碍设置，在那里启用 getabreak。</string>
+    <string name="onboarding_permissions_state_granted">已授予</string>
+    <string name="onboarding_done_title">全都设好了</string>
+    <string name="onboarding_done_message">getabreak 已配置完成。你的选择会成为首页上的一个分组，应用、时间表、额度和步骤都可以在那里修改。</string>
+    <plurals name="onboarding_done_summary_scrollBreaks">
+        <item quantity="one">在 %d 个应用中启用刷屏休息</item>
+        <item quantity="other">在 %d 个应用中启用刷屏休息</item>
+    </plurals>
+    <string name="onboarding_done_summary_scrollBreaksPending">刷屏休息已就绪，但需要「显示在其他应用上层」权限才能出现。</string>
+    <string name="onboarding_done_summary_grayscale">每天使用 %s 后变灰</string>
+    <string name="onboarding_done_summary_grayscaleFilter">让人分心的应用在每天使用 %s 后变得暗淡模糊。系统灰度需要一次性设置。</string>
+    <string name="onboarding_done_summary_blocking">每天使用 %s 后屏蔽应用</string>
+    <string name="onboarding_done_summary_blockingPending">应用屏蔽已就绪，但需要「显示在其他应用上层」权限才能生效。</string>
+    <string name="onboarding_done_summary_accessibilityPending">getabreak 的无障碍服务还没启用。你可以在首页启动它。</string>
+    <string name="onboarding_done_summary_nothing">没有选择应用，所以什么都没配置。可以在首页探索各项功能。</string>
+    <string name="onboarding_done_summary_rerunHint">完成后会在已有分组旁边新增一个分组。</string>
+    <string name="onboarding_done_summary_permissionsHint">授予缺失的权限即可打开这些功能。之后再说也行，我们会在首页提醒你。</string>
+    <!-- endregion -->
+
+    <!-- region Shizuku 设置向导 -->
+    <string name="shizukuSetup_title">设置灰度</string>
+    <string name="shizukuSetup_intro">灰度需要一项特殊权限，只需一次。不用电脑的话，最省事的办法是 Shizuku，一个免费辅助应用。大概五分钟，权限重启后仍然有效。</string>
+    <string name="shizukuSetup_rooted">你的设备似乎已 root。可以跳过 Shizuku，直接授予权限。</string>
+    <string name="shizukuSetup_step1_title">安装 Shizuku</string>
+    <string name="shizukuSetup_step1_description">从 Google Play 获取免费的 Shizuku 应用。</string>
+    <string name="shizukuSetup_step1_go">打开 Play 商店</string>
+    <string name="shizukuSetup_step2_title">启动 Shizuku 服务</string>
+    <string name="shizukuSetup_step2_description">打开 Shizuku，按「通过无线调试启动」操作。如果还没开启开发者选项：在手机设置里找到「版本号」（通常在「关于手机」下）连点七次，然后在开发者选项里开启「无线调试」。Shizuku 会引导你完成配对。</string>
+    <string name="shizukuSetup_step2_openShizuku">打开 Shizuku</string>
+    <string name="shizukuSetup_step2_openDeveloperSettings">开发者选项</string>
+    <string name="shizukuSetup_step2_rebootHint">每次重启后都要重新启动 Shizuku。不过它授予的权限会保留。</string>
+    <string name="shizukuSetup_step3_title">允许 getabreak 使用 Shizuku</string>
+    <string name="shizukuSetup_step3_description">Shizuku 会弹窗让你确认。</string>
+    <string name="shizukuSetup_step3_go">请求访问</string>
+    <string name="shizukuSetup_step4_title">授予灰度权限</string>
+    <string name="shizukuSetup_step4_description">一次点按，getabreak 就能通过 Shizuku 给自己授予颜色滤镜权限。</string>
+    <string name="shizukuSetup_completed_title">全部完成！</string>
+    <string name="shizukuSetup_completed_message">权限已授予，灰度可以用了。如果之前它一直在等你的设置，现在已生效。</string>
+    <!-- 同一个向导，为挂起锁定方式打开，它需要的是 Shizuku 本身而非某项权限 -->
+    <string name="shizukuSetup_suspend_title">设置 Shizuku</string>
+    <string name="shizukuSetup_suspend_intro">挂起应用要通过 Shizuku，一个免费辅助应用。设置大概五分钟。有一点要注意：锁定要挂起应用时，Shizuku 必须在运行，而它每次重启都会停。</string>
+    <string name="shizukuSetup_suspend_step2_rebootHint">每次重启后都要重新启动 Shizuku。在那之前，被锁定的应用会改用屏蔽页面。</string>
+    <string name="shizukuSetup_suspend_completed_message">Shizuku 正在运行，getabreak 可以使用它。返回去选「挂起」。</string>
+    <!-- endregion -->
+
+    <!-- region 高权限 -->
+    <string name="noPermissions_title">需要权限</string>
+    <string name="noPermissions_message">要使用此功能，请通过电脑用 ADB 授予高权限：</string>
+    <string name="noPermissions_command">adb shell \"%s\"</string>
+    <string name="noPermissions_visitGitHub">设置步骤见 <annotation type="GITHUB">GitHub</annotation>。</string>
+    <string name="noPermissions_rooted">你的设备似乎已 root。可以试试用 root 授予权限。</string>
+    <string name="noPermissions_rooted_go">通过 root 授予</string>
+    <string name="noPermissions_shizuku">Shizuku 可用。可以试试用它授予权限。</string>
+    <string name="noPermissions_shizuku_go">通过 Shizuku 授予</string>
+    <string name="noPermissions_shizukuWizard">手边没有电脑？直接在这部手机上一步步设置 Shizuku。</string>
+    <string name="noPermissions_shizukuWizard_go">引导设置</string>
+    <!-- endregion -->
+
+    <!-- region 高级版 -->
+    <string name="premium_tile_subtitle">全部功能已解锁，专注无扰</string>
+    <!-- 弹层标题会随打开它的入口变化 -->
+    <string name="premium_sheet_title_generic">getabreak 数字健康工具</string>
+    <string name="premium_sheet_title_nudge">getabreak 帮到你了？</string>
+    <string name="premium_sheet_title_locked">解锁 %1$s</string>
+    <string name="premium_sheet_subtitle">免费、开源、无广告。为不分心的专注而做。</string>
+    <!-- 个人影响卡片 -->
+    <string name="premium_impact_title">你目前的戒断成果</string>
+    <string name="premium_impact_interventions">次 getabreak 介入</string>
+    <string name="premium_impact_grayscale">在灰度下度过</string>
+    <string name="premium_impact_days">天的统计</string>
+    <string name="premium_impact_count">%d×</string>
+    <string name="premium_extras_title">全部功能已解锁</string>
+    <string name="premium_extras_body">getabreak 里的所有数字健康功能都完全免费，也没有任何干扰。</string>
+    <string name="premium_unlocked_title">所有功能都可用</string>
+    <string name="premium_unlocked_subtitle">完整使用数字健康工具</string>
+    <string name="premium_unlocked_body">getabreak 的设计目标，是帮你在没有打断、付费墙或跟踪的情况下重新掌控注意力。</string>
+    <string name="premium_action_donatedUnlock">解锁</string>
+    <string name="premium_action_freeUnlock">解锁全部功能</string>
+    <string name="premium_action_relock">重置</string>
+    <string name="premium_locked_footer">所有功能完全免费、随手可用。没有订阅，也没有付费墙。</string>
+    <string name="premium_feature_usageHistory">更长的使用历史</string>
+    <string name="premium_chip_lockedLabel">高级版</string>
+    <!-- endregion -->
+
+    <!-- region 关于 -->
+    <string name="about_summary">让数字戒断成为你的默认状态。</string>
+    <string name="about_tile_subtitle">设置与项目信息。</string>
+    <string name="about_section_settings">设置</string>
+    <string name="about_theme">主题</string>
+    <string name="about_theme_system">跟随系统</string>
+    <string name="about_theme_light">浅色</string>
+    <string name="about_theme_dark">深色</string>
+    <string name="about_onboarding">重新设置 getabreak</string>
+    <string name="about_onboarding_subtitle">再走一遍欢迎流程和初始预设</string>
+    <string name="about_onboarding_locked_subtitle">那会往你锁定的分组里加东西。请先解锁。</string>
+    <string name="about_debugLog_subtitle">记录 getabreak 做了什么，用于反馈问题。只留在这部手机上，关闭后即删除。</string>
+    <string name="about_debugLog_open">打开调试日志</string>
+    <string name="about_section_backup">备份</string>
+    <string name="about_backup_export">把设置保存到文件</string>
+    <string name="about_backup_export_subtitle">你配置的所有内容，都在一个你自己保存的文件里。不含屏幕使用历史。</string>
+    <string name="about_backup_export_saved">已保存为 %s</string>
+    <string name="about_backup_export_failed">无法写入文件。</string>
+    <string name="about_backup_restore">从文件恢复设置</string>
+    <string name="about_backup_restore_subtitle">先显示文件里有什么，然后重启 getabreak。</string>
+    <string name="about_backup_restore_locked_subtitle">承诺密码生效期间已锁定。</string>
+    <string name="settings_lockedByBrake_subtitle">刹车期间已锁定。</string>
+    <string name="about_backup_restore_failed">那个文件里没有 getabreak 设置。</string>
+    <string name="about_backup_restore_readFailed">无法读取那个文件。</string>
+    <string name="about_backup_restore_nothingApplies">文件里没有适用于这个 getabreak 版本的内容。</string>
+    <string name="about_backup_preview_title">恢复这些设置？</string>
+    <string name="about_backup_preview_saved">保存于 %1$s，使用 getabreak %2$s</string>
+    <string name="about_backup_preview_savedUnknownVersion">保存于 %s</string>
+    <string name="about_backup_preview_newerVersion">由一个更新的 getabreak 写入。这个版本不认识的部分会被略过。</string>
+    <plurals name="about_backup_preview_apps">
+        <item quantity="one">%d 个应用</item>
+        <item quantity="other">%d 个应用</item>
+    </plurals>
+    <plurals name="about_backup_preview_websites">
+        <item quantity="one">%d 个网站</item>
+        <item quantity="other">%d 个网站</item>
+    </plurals>
+    <plurals name="about_backup_preview_otherSettings">
+        <item quantity="one">另外 %d 项设置</item>
+        <item quantity="other">另外 %d 项设置</item>
+    </plurals>
+    <plurals name="about_backup_preview_changes">
+        <item quantity="one">%d 项设置与当前不同。</item>
+        <item quantity="other">%d 项设置与当前不同。</item>
+    </plurals>
+    <string name="about_backup_preview_noChanges">里面没有任何与当前不同的设置。</string>
+    <string name="about_backup_preview_excluded">不在文件中：你的承诺密码、正在生效的刹车、屏幕使用历史。</string>
+    <string name="about_backup_preview_confirm">恢复并重启</string>
+    <string name="about_section_project">项目与源码</string>
+    <string name="about_version">版本 %1$s</string>
+    <!-- 连点版本号时弹出的提示，和 Android 设置里的版本号一样 -->
+    <plurals name="about_version_tapsLeft">
+        <item quantity="one">还差 %d 下，你就该把手机放下了。</item>
+        <item quantity="other">还差 %d 下，你就该把手机放下了。</item>
+    </plurals>
+    <string name="about_version_putItDown">现在，放下它。</string>
+    <string name="about_contact">联系我</string>
+    <string name="about_contact_subtitle">欢迎功能建议和想法。我每条都看，但不一定都回。</string>
+    <string name="about_github">在 GitHub 上参与</string>
+    <!-- endregion -->
+
+    <!-- region 调试日志 -->
+    <string name="debugLog_title">调试日志</string>
+    <plurals name="debugLog_entries">
+        <item quantity="one">%1$s 条</item>
+        <item quantity="other">%1$s 条</item>
+    </plurals>
+    <plurals name="debugLog_entriesShown">
+        <item quantity="one">%2$s 条中的 %1$s 条</item>
+        <item quantity="other">%2$s 条中的 %1$s 条</item>
+    </plurals>
+    <string name="debugLog_level_all">全部</string>
+    <string name="debugLog_level_info">信息</string>
+    <string name="debugLog_level_warnings">警告</string>
+    <string name="debugLog_level_errors">错误</string>
+    <string name="debugLog_tag_remove">显示所有标签</string>
+    <string name="debugLog_share">分享日志</string>
+    <string name="debugLog_clear">清空日志</string>
+    <string name="debugLog_clear_title">清空调试日志？</string>
+    <string name="debugLog_clear_message">目前记录的内容都会删除。日志开启期间仍会继续记录新的条目。</string>
+    <string name="debugLog_clear_confirm">清空</string>
+    <string name="debugLog_empty_title">还没有记录</string>
+    <string name="debugLog_empty_message">getabreak 一有动作，条目就会出现在这里。</string>
+    <string name="debugLog_noMatch_title">没有匹配的条目</string>
+    <string name="debugLog_noMatch_reset">清除筛选</string>
+    <string name="debugLog_run_current">自 %1$s 起运行</string>
+    <string name="debugLog_run_past">%1$s 至 %2$s</string>
+    <plurals name="debugLog_moreLines">
+        <item quantity="one">还有 %1$d 行</item>
+        <item quantity="other">还有 %1$d 行</item>
+    </plurals>
+    <string name="debugLog_copied">条目已复制</string>
+    <string name="debugLog_newest">跳到最新条目</string>
+    <string name="debugLog_hint">点按条目展开，长按复制，点按标签只看该标签。</string>
+    <!-- endregion -->
+</resources>
